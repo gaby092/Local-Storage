@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Gestão de Joias</title>
+</head>
+<body>
+    <h2>Gestão de Joias</h2>
+
+    <form id="joiaForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="tipo">Tipo:</label>
+        <input type="text" id="tipo" required>
+
+        <label for="material">Material:</label>
+        <input type="text" id="material" required>
+
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" required>
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" required>
+
+        <label for="disponibilidade">Disponibilidade:</label>
+        <select id="disponibilidade" required>
+            <option value="disponivel">Disponível</option>
+            <option value="indisponivel">Indisponível</option>
+        </select>
+
+        <button type="button" onclick="inserirJoia()">Inserir</button>
+    </form>
+
+    <table id="joiaTable">
+        <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Material</th>
+            <th>Marca</th>
+            <th>Preço</th>
+            <th>Disponibilidade</th>
+            <th>Excluir</th>
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
